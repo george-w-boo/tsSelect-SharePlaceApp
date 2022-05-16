@@ -8,11 +8,11 @@
   
   body {
     margin: 0;
+    padding: 20px;
   }
   
   label,
-  input,
-  textarea {
+  input {
     display: block;
     margin: 0.5rem 0;
   }
@@ -21,8 +21,7 @@
     font-weight: bold;
   }
   
-  input,
-  textarea {
+  input {
     font: inherit;
     padding: 0.2rem 0.4rem;
     width: 100%;
@@ -31,7 +30,7 @@
   }
   
   input:focus,
-  textarea:focus {
+  :focus {
     outline: none;
     background: #fff5f9;
   }
@@ -53,4 +52,32 @@
   button:active {
     background: #a80041;
     border-color: #a80041;
+  }
+
+  #map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    /* background-color: grey; */
+  }
+
+  #map p {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  #address {
+    width: 100%;
+    max-width: 100%;
   }
